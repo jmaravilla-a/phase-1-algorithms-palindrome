@@ -1,6 +1,20 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let newString = "";
+  for (let i = word.length - 1; i >= 0; i--) {
+    newString += word[i];
+  }
+  return newString === word;
 }
+  isPalindrome('Hello');
+  // const len = word.length;
+  // let flipped = [];
+  // for (let i = 1; i <= len; i++) {
+  //   flipped.push(word[len - i]);
+  // }; 
+  // let flip = workArray.join()
+  // return word === flip
+  // // Write your algorithm here
+
 
 /* 
   Add your pseudocode here
